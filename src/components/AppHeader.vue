@@ -31,5 +31,8 @@ export default {
 header {
     height: 100px;
     background-color: coral;
+    text-align: center;
+    display: flex;
+    align-items: center;
 }
 </style>

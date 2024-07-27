@@ -33,7 +33,10 @@
 <style lang="scss" scoped>
 
 footer{
+    text-align: center;
     height: 100px;
     background-color: coral;
+    display: flex;
+    align-items: center;
 }
 </style>
