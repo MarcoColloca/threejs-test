@@ -1,8 +1,8 @@
-import { createApp } from 'vue'
-import './assets/style/general.scss'
-import App from './App.vue'
-import * as bootstrap from 'bootstrap'
-
+import { createApp } from 'vue';
+import './assets/style/general.scss';
+import App from './App.vue';
+import * as bootstrap from 'bootstrap';
+import * as THREEJS from './three.js'
 
 /* Importazione della libreria di font awesome*/
 import { library } from '@fortawesome/fontawesome-svg-core'

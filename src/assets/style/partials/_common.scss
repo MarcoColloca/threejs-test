@@ -16,3 +16,18 @@ html{
     scroll-behavior:smooth;
 }
 
+#app{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    main{
+        flex-grow: 1;
+    }
+}
+
+#canvas{
+    position: absolute;
+    top: calc(50% - 360px);
+    left: calc(50% - 512px);
+    z-index: -1;
+}

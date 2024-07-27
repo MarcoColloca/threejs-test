@@ -1,12 +1,15 @@
 <script>
 
-    export default {
-        components:{            
-        },
+export default {
+    components: {
+    },
 
-        data(){
+    data() {
+        return {
+
         }
     }
+}
 </script>
 
 
@@ -25,8 +28,8 @@
 
 
 <style lang="scss" scoped>
-    header{
-        height: 100px;
-        background-color: coral;
-    }
+header {
+    height: 100px;
+    background-color: coral;
+}
 </style>
