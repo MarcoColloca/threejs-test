@@ -1,6 +1,8 @@
 <script>
     import { TresCanvas } from '@tresjs/core'
     import OrbitControls from './tres-components/OrbitControls.vue';
+    import Torus from './tres-components/Torus.vue'
+    import Horse from './tres-components/Horse.vue'
 
     export default {
         data(){
@@ -11,7 +13,9 @@
         mounted(){
         },
         components:{
-            OrbitControls
+            OrbitControls,
+            Torus,
+            Horse
         }
     }
 </script>
@@ -21,7 +25,9 @@
 <template>
     <!-- Page Main -->
     <main>
-        <TresCanvas clear-color="#000000">
+        <TresCanvas 
+         alpha
+        >
             <!-- scene -->
             <TresPerspectiveCamera
              :position="[1,1,5]"
@@ -35,13 +41,18 @@
             ></TresAxesHelper>
 
             <TresAmbientLight
-             :args="[0xffffff, 2]"
+             :args="[0xffffff, 1.5]"
             ></TresAmbientLight>
+            
+            <TresDirectionalLight
+             :args="[0xffffff, 2]" 
+            ></TresDirectionalLight>
 
-            <TresMesh>
-                <TresTorusGeometry :args="[1, 0.5, 16, 32]" />
-                <TresMeshStandardMaterial color="coral" />
-            </TresMesh>
+            <Torus></Torus>
+            
+            <Suspense>
+                <Horse></Horse>
+            </Suspense>
         </TresCanvas>
     </main>
 </template>
