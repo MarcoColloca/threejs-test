@@ -2,7 +2,7 @@ import { height } from '@fortawesome/free-brands-svg-icons/fa42Group'
 import * as THREE from 'three'
 
 
-console.log(THREE)
+//console.log(THREE)
 
 const scene = new THREE.Scene()
 

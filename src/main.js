@@ -2,7 +2,8 @@ import { createApp } from 'vue';
 import './assets/style/general.scss';
 import App from './App.vue';
 import * as bootstrap from 'bootstrap';
-import * as THREEJS from './three.js'
+// import * as THREEJS from './three.js'
+import Tres from '@tresjs/core'
 
 /* Importazione della libreria di font awesome*/
 import { library } from '@fortawesome/fontawesome-svg-core'
@@ -41,5 +42,5 @@ library.add(faClockSolid, faClockRegular, faChevronDownSolid, faTwitter, faFaceb
 const app = createApp(App)
 
 app.component('font-awesome-icon', FontAwesomeIcon)
-
+app.use(Tres)
 app.mount('#app')
