@@ -1,4 +1,5 @@
 <script>
+    import {TresCanvas} from '@tresjs/core'
     export default {
         data(){
             return{
@@ -23,6 +24,10 @@
                 Main Page
             </h1>
         </div>
+
+        <TresCanvas>
+            <!-- scene -->
+        </TresCanvas>
     </main>
 </template>
 
