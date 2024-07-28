@@ -25,9 +25,3 @@ html{
     }
 }
 
-#canvas{
-    position: absolute;
-    top: calc(50% - 360px);
-    left: calc(50% - 512px);
-    z-index: -1;
-}
